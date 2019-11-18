@@ -106,7 +106,34 @@ CMM is a development model created after a study of data collected from organiza
 ### Postmortem
 
 ### Toil
-Toil is the kind of work tied to running a production service thattends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.<sup id="a5">[5](#f5)</sup>
+Toil is the kind of work tied to running a production service thattends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.
+
+#### Manual
+This includes work such as manually running a script that automates some task.
+Running a script may be quicker than manually executing each step in the script,
+but the hands-on time a human spends running that script (not the elapsed time)
+is still toil time.
+#### Repetitive
+If you’re performing a task for the first time ever, or even the second time, this
+work is not toil. Toil is work you do over and over. If you’re solving a novel problem
+or inventing a new solution, this work is not toil.
+#### Automatable
+If a machine could accomplish the task just as well as a human, or the need for
+the task could be designed away, that task is toil. If human judgment is essential
+for the task, there’s a good chance it’s not toil.3
+#### Tactical
+Toil is interrupt-driven and reactive, rather than strategy-driven and proactive.
+Handling pager alerts is toil. We may never be able to eliminate this type of work
+completely, but we have to continually work toward minimizing it.
+#### No enduring value
+If your service remains in the same state after you have finished a task, the task
+was probably toil. If the task produced a permanent improvement in your service,
+it probably wasn’t toil, even if some amount of grunt work—such as digging
+into legacy code and configurations and straightening them out—was involved.
+#### O(n) with service growth
+If the work involved in a task scales up linearly with service size, traffic volume,
+or user count, that task is probably toil. An ideally managed and designed service
+can grow by at least one order of magnitude
 
 ## Sources
 <b id="f1">1</b> Google SRE Interview, Niall Murphy and Ben Treynor, "What is 'Site Reliability Engineering', 2018-09-26, https://landing.google.com/sre/interview/ben-treynor.html [↩](#a1)  
