@@ -83,7 +83,7 @@ MTBF is the predicted elapsed time between inherent failures of a mechanical or 
 ### Mean Time To Failure (MTTF)
 MTTF denotes the expected time to failure for a non-repairable system.<sup id="a4">[4](#f4)</sup>
 
-### SLX
+### SLx
 
 #### Service Level Indicator (SLI)
 SLI is a carefully defined quantitative measure of some aspect of the level of service that is provided.<sup id="a5">[5](#f5)</sup>
