@@ -1,0 +1,4 @@
+1. Availabiltiy 
+2. Latency
+3. Throughhput
+4. Error rate
