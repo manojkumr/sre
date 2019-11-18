@@ -1,4 +1,32 @@
-1. Availabiltiy 
-2. Latency
-3. Throughhput
-4. Error rate
+SRE:
+1. Availabiltiy - The ability to reach Sign and associated microservices and perform signature workflows.
+   Source - ELB/Splunk
+   Formula - Number of sucussfull request(e.g response code 200, 403) / Total number of valid request
+2. Response Time - The elapsed system response time for web or API actions.
+   Source - NewRelic
+   Formula - Direct from newrelic. (99%ile < 300ms, 95%ile < 250ms, 90%ile < 150ms)
+3. Throughput - The number of agreements created each minute on each shard
+   Source - Database by Query/Synthetic monitoring
+   Formula - Number of agreements created/nmins per shard > 1 agreement per n mins
+4. Error rate - The ability to service to perform when overloaded or when backend is unavailable.
+   Source - ELB/Splunk
+   Formula - (Timeout, error, exceptions or 5xx)/mins > 5 agreement/mins
+
+DRE:
+1. Availabiltiy - Ability to server legitmiate request 
+   Source - Custom query/Datadog availbilty monitoring
+   Formula - (Number of sucessful connections over time)
+2. Response Time - Time required to serve the queries from sucessful connections
+   Source - Datadog
+   Formula - 
+    Write latency should (99%ile < 200ms, 95%ile < 150ms, 90%ile < 100ms)
+    Read latency should (99%ile < 150ms, 95%ile < 100ms, 90%ile < 80/ms)
+
+3. Error rate - Deadlocks and Lockwait timeout erros should be less     
+   Source - Databse Logs
+   Formula 
+   -  Lockwait timeout errors should be less than 0.001%
+   -  Dead locks should be less than .0001% of queires
+4. Freshness - Replication lag between slave and Master should be less than < 60 sec
+  - Source: Datadog
+5. 
