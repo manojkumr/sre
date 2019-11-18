@@ -94,10 +94,19 @@ SLO is a target value or range of values for a service level that is measured by
 #### Service Level Agreement (SLA)
 SLA is a (legal) agreement with repercussions for failure to meet.<sup id="a5">[5](#f5)</sup>
 
+#### DRE 
+
+##### RPO
+##### RTO
+
+
 ### Capability Maturity Model (CMM)
 CMM is a development model created after a study of data collected from organizations that contracted with the U.S. Department of Defense, who funded the research. The term "maturity" relates to the degree of formality and optimization of processes, from ad hoc practices, to formally defined steps, to managed result metrics, to active optimization of the processes.<sup id="a7">[7](#f7)</sup>
 
 ### Postmortem
+
+### Toil
+Toil is the kind of work tied to running a production service thattends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.<sup id="a5">[5](#f5)</sup>
 
 ## Sources
 <b id="f1">1</b> Google SRE Interview, Niall Murphy and Ben Treynor, "What is 'Site Reliability Engineering', 2018-09-26, https://landing.google.com/sre/interview/ben-treynor.html [↩](#a1)  
