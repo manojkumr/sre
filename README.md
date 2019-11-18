@@ -65,14 +65,7 @@ Tickets are everything, where a human needs to take action but not now. Usually 
 #### Logs
 This metrics are only for diagnostic, forensic purposes and post mortems.
 
-### Defense In Depth
-Failures will always happen. Get used to it. There is nothing you can do about it, but what you can do is tolerate them and have them automatically get fixed. If you design your system, that it is tolerating point failures you will have already one problem less.<sup id="a1">[1](#f1)</sup>
-
-### Graceful Degredation
-"Graceful degradation is the ability to tolerate failures without having complete collapse. For example, if a user's network is running slowly, the Hangout video system will reduce the video resolution and preserve the audio. For Gmail, a slow network might mean that big attachments won't load, but users can still read their email. All these are automated responses that give you high availability without a human having to do anything."<sup id="a1">[1](#f1)</sup>
-
-### Wheel Of Misfortune
-The "Wheel Of Misfortune" is a role-game, where a previous postmortem is reenacted with a cast of engineers playing roles as laid out in the postmortem.<sup id="a6">[6](#f6)</sup>
+#### Data Size vs Storage Size
 
 ### Mean Time To Recover (MTTR)
 MTTR is the average time that a device will take to recover from any failure.<sup id="a3">[3](#f3)</sup>
@@ -97,13 +90,21 @@ SLA is a (legal) agreement with repercussions for failure to meet.<sup id="a5">[
 #### DRE 
 
 ##### RPO
-##### RTO
-
-
-### Capability Maturity Model (CMM)
-CMM is a development model created after a study of data collected from organizations that contracted with the U.S. Department of Defense, who funded the research. The term "maturity" relates to the degree of formality and optimization of processes, from ad hoc practices, to formally defined steps, to managed result metrics, to active optimization of the processes.<sup id="a7">[7](#f7)</sup>
+##### RTO 
+Backup stratergy
+Recovery stratergy
+BASE
 
 ### Postmortem
+
+#### Defense In Depth
+Failures will always happen. Get used to it. There is nothing you can do about it, but what you can do is tolerate them and have them automatically get fixed. If you design your system, that it is tolerating point failures you will have already one problem less.<sup id="a1">[1](#f1)</sup>
+
+#### Graceful Degradation
+"Graceful degradation is the ability to tolerate failures without having complete collapse. For example, if a user's network is running slowly, the Hangout video system will reduce the video resolution and preserve the audio. For Gmail, a slow network might mean that big attachments won't load, but users can still read their email. All these are automated responses that give you high availability without a human having to do anything."<sup id="a1">[1](#f1)</sup>
+
+#### Wheel Of Misfortune
+The "Wheel Of Misfortune" is a role-game, where a previous postmortem is reenacted with a cast of engineers playing roles as laid out in the postmortem.<sup id="a6">[6](#f6)</sup>
 
 ### Toil
 Toil is the kind of work tied to running a production service thattends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.
