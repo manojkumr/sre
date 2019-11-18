@@ -83,13 +83,15 @@ MTBF is the predicted elapsed time between inherent failures of a mechanical or 
 ### Mean Time To Failure (MTTF)
 MTTF denotes the expected time to failure for a non-repairable system.<sup id="a4">[4](#f4)</sup>
 
-### Service Level Indicator (SLI)
+### SLX
+
+#### Service Level Indicator (SLI)
 SLI is a carefully defined quantitative measure of some aspect of the level of service that is provided.<sup id="a5">[5](#f5)</sup>
 
-### Service Level Objective (SLO)
+#### Service Level Objective (SLO)
 SLO is a target value or range of values for a service level that is measured by an SLI.<sup id="a5">[5](#f5)</sup>
 
-### Service Level Agreement (SLA)
+#### Service Level Agreement (SLA)
 SLA is a (legal) agreement with repercussions for failure to meet.<sup id="a5">[5](#f5)</sup>
 
 ### Capability Maturity Model (CMM)
