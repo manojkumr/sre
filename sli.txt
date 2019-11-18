@@ -27,6 +27,6 @@ DRE:
    Formula 
    -  Lockwait timeout errors should be less than 0.001%
    -  Dead locks should be less than .0001% of queires
-4. Freshness - Replication lag between slave and Master should be less than < 60 sec
+4. Freshness - Replication lag between slave and Master should be less than 
+    Formula: Lag should be less < 60 sec
   - Source: Datadog
-5. 
